@@ -36,8 +36,18 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 # receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
-# For when keys break
-alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
+# Nekoray
+alias nekoray="sudo ~/General/nekoray/launcher"
+
+# OVPN
+alias ovpn-con="sudo openvpn --config ~/General/VPN/dl19Tdl14.ovpn --auth-user-pass ~/General/VPN/ovpn-auth.txt"
+
+#postgres
+alias pgadmin="/usr/pgadmin4/bin/pgadmin4 </dev/null &>/dev/null &"
+
+#Keyboard
+alias set-layout="setxkbmap -layout us,ir"
+alias set-shortcut="setxkbmap -option 'grp:win_space_toggle'"
 
 # systemd
 alias list_systemctl="systemctl list-unit-files --state=enabled"
