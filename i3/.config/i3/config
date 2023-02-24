@@ -151,7 +151,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Force applications to open on specific workspaces
 assign [class="firefox"] $ws1
-assign [class="jetbrains-idea"] $ws2
 assign [class="TelegramDesktop"] $ws3
 
 # reload the configuration file
