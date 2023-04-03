@@ -10,7 +10,6 @@ sudo dnf install \
   cmake \
   git \
   picom \
-  feh \
   alacritty \
   arandr \
   feh \
