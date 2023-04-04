@@ -7,6 +7,7 @@ sudo dnf install \
   clang \
   ninja-build \
   gtk3-devel \
+  keybinder3-devel \
   cmake \
   git \
   picom \
