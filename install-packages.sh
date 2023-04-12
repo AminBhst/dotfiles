@@ -38,7 +38,7 @@ sudo dnf group upgrade --with-optional Multimedia
 sudo dnf install --allowerasing i3-gaps
 
 # Install packages
-sudo dnf install \
+sudo dnf -y install \
   fzf \
   clang \
   ninja-build \
