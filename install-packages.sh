@@ -47,7 +47,6 @@ sudo dnf -y install \
   cmake \
   git \
   picom \
-  feh \
   alacritty \
   arandr \
   feh \
