@@ -59,6 +59,11 @@ sudo dnf -y install \
   htop \
   unrar \
   vlc \
+  zoxide
+  
+  
+# Add missing fzf shell file
+sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh
 
 
 # Create directories
