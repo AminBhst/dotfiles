@@ -59,7 +59,8 @@ sudo dnf -y install \
   htop \
   unrar \
   vlc \
-  zoxide
+  zoxide \
+  ripgrep
   
   
 # Add missing fzf shell file
