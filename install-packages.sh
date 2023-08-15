@@ -67,6 +67,9 @@ sudo dnf -y install \
   vlc \
   zoxide \
   ripgrep
+
+#  Download jetbrains font
+wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
   
   
 # Add missing fzf shell file
