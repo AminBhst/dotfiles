@@ -28,6 +28,12 @@ sudo /usr/pgsql-10/bin/postgresql-10-setup initdb
 sudo systemctl enable postgresql-10
 sudo systemctl start postgresql-10
 
+# Install pgadmin4
+wget  https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
+sudo rpm -Uvh pgadmin4-fedora-repo-2-1.noarch.rpm
+sudo yum -y install pgadmin4-desktop
+
+
 
 # Multimedia related
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
