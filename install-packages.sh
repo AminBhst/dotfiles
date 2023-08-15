@@ -14,8 +14,8 @@ EOF
 
 # Install pgsql 10
 sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-libs-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-server-10.22-2PGDG.f37.x86_64.rpm
 sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-10.22-2PGDG.f37.x86_64.rpm
+sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-server-10.22-2PGDG.f37.x86_64.rpm
 sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-contrib-10.22-2PGDG.f37.x86_64.rpm
 sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-devel-10.22-2PGDG.f37.x86_64.rpm
 sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-plperl-10.22-2PGDG.f37.x86_64.rpm
