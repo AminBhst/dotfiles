@@ -21,6 +21,9 @@ set $opacity 0.9
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
+# Authentication agent used for password input
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # for_window [class=".*"] opacity $opacity
 
 ### Output configuration
