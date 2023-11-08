@@ -6,6 +6,7 @@
     font-size: 14px;
     font-style: normal;
     min-height: 0;
+    /* primary color is 00ffff */
 }
 
 window#waybar {
@@ -36,7 +37,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-	background-color: #E6B9C6;
+	background-color: #00ffff;
 	color: black;
 	border-radius: 16px;
 }
@@ -73,7 +74,7 @@ window#waybar {
 }
 
 #clock {
-    color: #E6B9C6;
+    color: #00ffff;
     background-color: #282828;
     border-radius: 0px 0px 0px 24px;
     padding-left: 13px;
@@ -112,13 +113,13 @@ window#waybar {
 }
 
 #network {
-    color: #f4d9e1;
+    color: #00ffff;
     border-radius: 8px;
     margin-right: 5px;
 }
 
 #pulseaudio {
-    color: #f4d9e1;
+    color: #00ffff;
     border-radius: 8px;
     margin-left: 0px;
 }
@@ -131,13 +132,13 @@ window#waybar {
 }
 
 #custom-randwall {
-    color: #f4d9e1;
+    color: #00ffff;
     border-radius: 8px;
     margin-right: 0px;
 }
 
 #custom-launcher {
-    color: #e5809e;
+    color: #00ffff;
     background-color: #282828;
     border-radius: 0px 24px 0px 0px;
     margin: 0px 0px 0px 0px;
