@@ -1,6 +1,6 @@
 # Enable RPM Fusion
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Add MongoDB Repo
 cat <<EOF | sudo tee /etc/yum.repos.d/mongodb.repo
@@ -12,36 +12,15 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
 EOF
 
-# Install pgsql 10
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-libs-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-server-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-contrib-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-devel-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-plperl-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-plpython3-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-pltcl-10.22-2PGDG.f37.x86_64.rpm
-sudo dnf -y install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-37-x86_64/postgresql10-test-10.22-2PGDG.f37.x86_64.rpm
-
-# Init pgsql
-sudo /usr/pgsql-10/bin/postgresql-10-setup initdb
-sudo systemctl enable postgresql-10
-sudo systemctl start postgresql-10
-
 # Install pgadmin4
 wget  https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
 sudo rpm -Uvh pgadmin4-fedora-repo-2-1.noarch.rpm
 sudo yum -y install pgadmin4-desktop
 
-
-
 # Multimedia related
-sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-sudo dnf install lame\* --exclude=lame-devel
-sudo dnf group upgrade --with-optional Multimedia
-
-# Install i3
-sudo dnf install --allowerasing i3-gaps
+# sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+# sudo dnf install lame\* --exclude=lame-devel
+# sudo dnf group upgrade --with-optional Multimedia
 
 # Install packages
 sudo dnf -y install \
@@ -71,10 +50,11 @@ sudo dnf -y install \
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
   
-  
 # Add missing fzf shell file
 sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh
 
+# Add symlink for nekoray (Used for bemenu)
+# sudo ln -s ~/General/Apps/nekoray/nekoray /usr/bin/nekoray
 
 # Create directories
 mkdir -p General/VPN/
