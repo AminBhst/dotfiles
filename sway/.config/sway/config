@@ -15,16 +15,18 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
-set $opacity 0.9
+set $opacity 0.93
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
+blur enable
+corner_radius 10
 
 # Authentication agent used for password input
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-# for_window [class=".*"] opacity $opacity
+for_window [app_id="Alacritty"] opacity $opacity
 
 ### Output configuration
 #
