@@ -19,12 +19,12 @@ set $opacity 0.93
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu bemenu-run --fb "##24273a" --ff "##cad3f5" --nb "##24273a" --nf "##cad3f5" --tb "##24273a" --hb "##24273a" --tf "##ed8796" --hf "##eed49f" --nf "##cad3f5" --af "##cad3f5" --ab "##24273a"
 blur enable
 corner_radius 10
 
 # Authentication agent used for password input
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 
 for_window [app_id="Alacritty"] opacity $opacity
 
@@ -93,6 +93,8 @@ client.urgent             $urgent-bg-color      $urgent-bg-color   $text-color  
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+
+    bindsym $mod+Shift+P exec wlr-randr --output eDP-1 --off
 
     # Kill focused window
     bindsym $mod+Shift+q kill

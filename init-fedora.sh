@@ -45,7 +45,11 @@ sudo dnf -y install \
   unrar \
   vlc \
   zoxide \
-  ripgrep
+  ripgrep \
+  polkit-gnome \
+  ffmpeg
+
+# ffmpeg used for h264 codec problem in vlc
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
