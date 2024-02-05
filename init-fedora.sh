@@ -39,6 +39,7 @@ sudo dnf -y install \
   neovim \
   xprop \
   NetworkManager-tui \
+  network-manager-applet \
   telegram \
   mongodb-org \
   htop \
@@ -50,6 +51,8 @@ sudo dnf -y install \
   ffmpeg
 
 # ffmpeg used for h264 codec problem in vlc
+# Create Intellij symlink (used for dmenu or other menus for sway)
+# (inside /usr/bin ) sudo ln -s /home/ryewell/Development/IDEs/Intellij/bin/idea.sh intellij
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
