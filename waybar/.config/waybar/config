@@ -29,6 +29,7 @@
     "custom/dot",
     "custom/separator",
     "network",
+    "tray",
     "custom/dot",
     "clock"
   ], 
@@ -81,7 +82,7 @@
   },
   "tray": {
     "icon-size": 20,
-    "spacing": 8
+    "spacing" : 8
   },
   "custom/filler": {
     "format": " "
