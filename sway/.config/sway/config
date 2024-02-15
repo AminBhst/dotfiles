@@ -95,6 +95,7 @@ client.urgent             $urgent-bg-color      $urgent-bg-color   $text-color  
     bindsym $mod+Return exec $term
 
     bindsym $mod+Shift+P exec wlr-randr --output eDP-1 --off
+    bindsym $mod+Shift+R exec sway reload
 
     # Kill focused window
     bindsym $mod+Shift+q kill

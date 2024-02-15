@@ -38,6 +38,9 @@ alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 # Nekoray
 alias nekoray="sudo ~/General/nekoray/launcher"
+alias brightness="brigtnessctl set "
+alias volume-max="amixer sset Master 100%"
+
 
 # OVPN
 alias ovpn-con="sudo openvpn --config ~/General/VPN/dl19Tdl14.ovpn --auth-user-pass ~/General/VPN/ovpn-auth.txt"

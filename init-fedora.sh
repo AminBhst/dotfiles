@@ -48,7 +48,9 @@ sudo dnf -y install \
   zoxide \
   ripgrep \
   polkit-gnome \
-  ffmpeg
+  ffmpeg \
+  pavucontrol \
+  pulseaudio-utils
 
 # ffmpeg used for h264 codec problem in vlc
 # Create Intellij symlink (used for dmenu or other menus for sway)
