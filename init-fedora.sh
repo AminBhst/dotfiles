@@ -50,7 +50,8 @@ sudo dnf -y install \
   polkit-gnome \
   ffmpeg \
   pavucontrol \
-  pulseaudio-utils
+  pulseaudio-utils \
+  btop
 
 # ffmpeg used for h264 codec problem in vlc
 # Create Intellij symlink (used for dmenu or other menus for sway)
