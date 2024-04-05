@@ -8,6 +8,7 @@ export MANWIDTH=999
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
 export GOPATH=$HOME/.local/share/go
+export GANJEH_ENV_LOC=$HOME/Development/Work/config.properties
 export PATH=$HOME/.miniconda/bin:$PATH
 export PATH=$HOME/Development/flutter/flutter/bin:$PATH
 export PATH=/usr/local/pgsql/bin:$PATH

@@ -13,7 +13,6 @@
     "cpu",
     "memory",
     "temperature",
-    "custom/filler",
     "custom/playerctl",
     "custom/filler",
     "disk",
@@ -134,23 +133,23 @@
     "format-bluetooth": " {volume}",
     "format-bluetooth-muted": " ",
     "tooltip": false,
-    "format-muted": "",
+    "format-muted": "",
     "format-icons": {
       "default": ["󰝟", "", "󰕾" , ""]
     },
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol"
   },
-  "battery": {
-    "bat": "BAT0",
-    "interval": 10,
+    "battery": {
+    "bat": "BAT1",
+    "interval": 5,
     "states": {
       "warning": 30,
       "critical": 15
     },
-    "format": " {icon} {capacity}%",
+    "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",
-    "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+    "format-icons": [" ", " ", " ", " "],
     "max-length": 25,
     "tooltip": false
   },

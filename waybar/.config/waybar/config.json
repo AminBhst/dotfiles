@@ -16,14 +16,11 @@
     "temperature",
     "custom/separator",
     "custom/window-name",
-    "custom/pacman-update-icon",
-    "custom/pacman-update",
-    "tray"
+    "tray",
+    "battery",
   ],
 
-  "modules-center": ["wlr/workspaces"],
   "modules-right": [
-    "battery",
     "backlight",
     "pulseaudio",
     "custom/right-arr",
