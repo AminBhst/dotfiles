@@ -52,7 +52,8 @@ sudo dnf -y install \
   pavucontrol \
   pulseaudio-utils \
   btop \
-  shutter
+  shutter \
+  gtkmm30-devel
 
 # ffmpeg used for h264 codec problem in vlc
 # Create Intellij symlink (used for dmenu or other menus for sway)
