@@ -52,5 +52,8 @@ alias pgadmin="/usr/pgadmin4/bin/pgadmin4 </dev/null &>/dev/null &"
 alias set-layout="setxkbmap -layout us,ir"
 alias set-shortcut="setxkbmap -option 'grp:win_space_toggle'"
 
+#Shutdown
+alias shutdown="shutdown now"
+
 # systemd
 alias list_systemctl="systemctl list-unit-files --state=enabled"
