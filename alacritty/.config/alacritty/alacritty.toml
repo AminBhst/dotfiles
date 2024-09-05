@@ -76,7 +76,7 @@ mods = "Control"
 [[keyboard.bindings]]
 command = "/home/ryewell/.config/alacritty/script.sh"
 key = "K"
-mods = "Control"
+mods = "Control | Shift"
 
 [[keyboard.bindings]]
 action = "DecreaseFontSize"
