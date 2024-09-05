@@ -43,8 +43,9 @@ zsh_add_completion "esc/conda-zsh-completion" false
 # Key-bindings
 bindkey -s '^o' 'ranger\n'
 bindkey -s '^f' 'zi\n'
-bindkey -s '^s' 'ncdu\n'
+# bindkey -s '^s' 'ncdu\n'
 bindkey -s '^v' 'nvim\n'
+bindkey -s '^g' 'lazygit\n'
 bindkey -s '^r' 'hyprctl reload\n'
 bindkey -s '^n' 'nmtui\n'
 bindkey -s '^z' 'zi\n'
