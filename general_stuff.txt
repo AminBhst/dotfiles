@@ -1,2 +1,9 @@
 We can force discord to use a proxy. Change the desktop entry file located in /usr/share/applications:
 Exec=sh -c 'http_proxy=socks5://127.0.0.1:2080 https_proxy=socks5://127.0.0.1:2081 /usr/bin/discord'
+
+fonts:
+
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+sudo pacman -S ttf-farsiweb fonts-meta-base
+sudo pacman -S noto-fonts noto-fonts-extra
+sudo pacman -S noto-fonts-emoji
