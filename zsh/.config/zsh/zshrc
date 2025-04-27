@@ -47,7 +47,7 @@ bindkey -s '^f' 'zi\n'
 bindkey -s '^v' 'nvim\n'
 bindkey -s '^g' 'lazygit\n'
 bindkey -s '^r' 'hyprctl reload\n'
-bindkey -s '^n' 'nmtui\n'
+bindkey -s '^n' './home/ryewell/Apps/nekoray/launcher \n'
 bindkey -s '^z' 'zi\n'
 bindkey '^[[P' delete-char
 bindkey "^p" up-line-or-beginning-search # Up

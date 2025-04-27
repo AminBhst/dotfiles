@@ -111,8 +111,8 @@
 
     "network": {
         "interval": 2,
-        "format-wifi": "    {essid}  :  {bandwidthTotalBytes}",
-        "format-ethernet": " {essid}",
+        "format-wifi": "   {essid}  :  {bandwidthTotalBytes}",
+        "format-ethernet": "  {essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "! Disconnected",
         "tooltip-format-wifi": "{signalStrength}% | ⬇ {bandwidthDownBits} ⬆ {bandwidthUpBits} | {ipaddr}/{cidr}",

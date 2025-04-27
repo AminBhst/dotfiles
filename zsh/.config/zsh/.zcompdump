@@ -1,4 +1,4 @@
-#files: 817	version: 5.9
+#files: 826	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -583,6 +583,7 @@ _comps=(
 'hostnamectl' '_hostnamectl'
 'hotjava' '_webbrowser'
 'htop' '_htop'
+'hyprctl' '_hyprctl'
 'hyprpm' '_hyprpm'
 'iceweasel' '_mozilla'
 'icombine' '_ispell'
@@ -602,7 +603,7 @@ _comps=(
 'infocmp' '_terminals'
 'initctl' '_initctl'
 'initdb' '_postgresql'
-'insmod' '_modutils'
+'insmod' '_insmod'
 'install' '_install'
 'install-info' '_texinfo'
 'integer' '_typeset'
@@ -655,6 +656,8 @@ _comps=(
 'kitty' '_kitty'
 'knock' '_knock'
 'konqueror' '_webbrowser'
+'konsole' '_konsole'
+'konsoleprofile' '_konsole'
 'kpartx' '_kpartx'
 'kpdf' '_pdf'
 'krunner' '_krunner'
@@ -710,7 +713,7 @@ _comps=(
 'lsblk' '_lsblk'
 'lsdiff' '_patchutils'
 'lsinitcpio' '_mkinitcpio'
-'lsmod' '_modutils'
+'lsmod' '_lsmod'
 'lsns' '_lsns'
 'lsof' '_lsof'
 'lsusb' '_lsusb'
@@ -1077,7 +1080,7 @@ _comps=(
 'rmid' '_java'
 'rmiregistry' '_java'
 'rmm' '_mh'
-'rmmod' '_modutils'
+'rmmod' '_rmmod'
 'route' '_route'
 'rrdtool' '_rrdtool'
 'rsh' '_rlogin'
@@ -1088,6 +1091,7 @@ _comps=(
 'rubber-pipe' '_rubber'
 'ruby' '_ruby'
 'ruby-mri' '_ruby'
+'run0' '_run0'
 'run-help' '_run-help'
 'rup' '_hosts'
 'rusage' '_precommand'
@@ -1169,6 +1173,7 @@ _comps=(
 'sqlite' '_sqlite'
 'sqlite3' '_sqlite'
 'sqsh' '_sqsh'
+'sqv' '_sqv'
 'sr' '_surfraw'
 'srptool' '_gnutls'
 'ss' '_ss'
@@ -1331,6 +1336,7 @@ _comps=(
 'unwrapdiff' '_patchutils'
 'unxz' '_xz'
 'unzip' '_zip'
+'upower' '_upower'
 'uptime' '_uptime'
 'urxvt' '_urxvt'
 'urxvt256c' '_urxvt'
@@ -1397,6 +1403,7 @@ _comps=(
 '-value-,XZ_OPT,-default-' '_xz'
 '-vared-' '_in_vared'
 'vared' '_vared'
+'varlinkctl' '_varlinkctl'
 'vcs_info_hookadd' '_vcs_info'
 'vcs_info_hookdel' '_vcs_info'
 'vi' '_vi'
@@ -1671,15 +1678,17 @@ bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
 autoload -Uz _alacritty _bootctl _busctl _cargo _coredumpctl \
-            _curl _dolphin _dunst _dunstctl _hostnamectl \
-            _hyprpm _journalctl _kde-inhibit _kernel-install _kitty \
-            _krunner _kscreen-doctor _libinput _localectl _loginctl \
+            _curl _dkms _dolphin _dunst _dunstctl \
+            _hostnamectl _hyprctl _hyprpm _insmod _journalctl \
+            _kde-inhibit _kernel-install _kitty _konsole _krunner \
+            _kscreen-doctor _libinput _localectl _loginctl _lsmod \
             _machinectl _mkinitcpio _networkctl _ninja _oomctl \
             _pacman _pip _plasmashell _playerctl _pulseaudio \
-            _resolvectl _rg _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes \
-            _sd_unit_files _systemctl _systemd _systemd-analyze _systemd-delta \
-            _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles \
-            _systemsettings _timedatectl _udevadm _udisks2 _wpctl \
+            _resolvectl _rg _rmmod _run0 _sd_hosts_or_user_at_host \
+            _sd_machines _sd_outputmodes _sd_unit_files _sqv _systemctl \
+            _systemd _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn \
+            _systemd-path _systemd-run _systemd-tmpfiles _systemsettings _timedatectl \
+            _udevadm _udisks2 _upower _varlinkctl _wpctl \
             _yay _zoxide _cdr _all_labels _all_matches \
             _alternative _approximate _arg_compile _arguments _bash_completions \
             _cache_invalid _call_function _combination _complete _complete_debug \
