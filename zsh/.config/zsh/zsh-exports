@@ -14,5 +14,6 @@ export PATH=$HOME/Dev/Tools/flutter/bin:$PATH
 export PATH=/usr/local/pgsql/bin:$PATH
 export PATH=/usr/pgsql-10/bin:$PATH
 export SUDO_ASKPASS=beesu:$PATH
+export PATH=$PATH:/snap/bin:$PATH
 eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
