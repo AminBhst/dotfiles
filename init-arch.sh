@@ -11,11 +11,9 @@ cd ~
 # Fonts
 sudo pacman -S --noconfirm \
   noto-fonts \
-  oto-fonts-cjk \
   noto-fonts-emoji \
   ttf-dejavu \
   ttf-liberation \
-  ttf-farsiweb \
   fonts-meta-base \
   noto-fonts \
   noto-fonts-extra \
