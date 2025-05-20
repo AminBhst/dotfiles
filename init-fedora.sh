@@ -65,6 +65,7 @@ wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsM
 # Add missing fzf shell file
 sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh
 sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh
+chsh -s $(which zsh)
 
 # Add symlink for nekoray (Used for bemenu)
 # sudo ln -s ~/General/Apps/nekoray/nekoray /usr/bin/nekoray
