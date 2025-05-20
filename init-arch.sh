@@ -55,6 +55,8 @@ sudo pacman -S --noconfirm \
   ffmpeg \
   pavucontrol \
   shutter \
+  libimobiledevice \
+  usbmuxd
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
