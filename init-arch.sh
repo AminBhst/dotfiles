@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm \
   dunst \
   clang \
   discord \
-  ninja-build \
+  ninja \
   libkeybinder3 \
   libappindicator-gtk3 \
   cmake \
@@ -40,8 +40,6 @@ sudo pacman -S --noconfirm \
   feh \
   zsh \
   neovim \
-  xprop \
-  NetworkManager-tui \
   network-manager-applet \
   telegram-desktop \
   base-devel \
