@@ -54,7 +54,9 @@ sudo pacman -S --noconfirm \
   pavucontrol \
   shutter \
   libimobiledevice \
-  usbmuxd
+  usbmuxd \
+  xdg-desktop-portal-gtk \
+  xdg-desktop-portal-hyprland  
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
@@ -74,3 +76,6 @@ chsh -s $(which zsh)
 # yay
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git ~/.yay-bin && cd ~/.yay-bin && makepkg -si
 yay
+
+mkdir ~/.config/xdg-desktop-portal
+echo -e "[preferred]\ndefault=hyprland;gtk" > ~/.config/xdg-desktop-portal/hyprland-portals.conf

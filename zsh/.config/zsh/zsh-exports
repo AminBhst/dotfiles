@@ -15,5 +15,8 @@ export PATH=/usr/local/pgsql/bin:$PATH
 export PATH=/usr/pgsql-10/bin:$PATH
 export SUDO_ASKPASS=beesu:$PATH
 export PATH=$PATH:/snap/bin:$PATH
+export GTK_THEME=Adwaita:dark
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_STYLE_OVERRIDE=Adwaita-Dark
 eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
