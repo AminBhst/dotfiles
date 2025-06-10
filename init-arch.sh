@@ -10,6 +10,7 @@ cd ~
 
 # Fonts
 sudo pacman -S --noconfirm \
+  ttf-jetbrains-mono-nerd \
   noto-fonts \
   noto-fonts-emoji \
   ttf-dejavu \
@@ -60,7 +61,12 @@ sudo pacman -S --noconfirm \
   xdg-desktop-portal-hyprland \
   ncdu \
   spotify-launcher \
-  yt-dlp
+  yt-dlp \
+  bluez-utils \
+  brightnessctl \
+  pipewire \
+  pipewire-pulse \
+  wireplumber
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
