@@ -45,7 +45,7 @@ tooltip label {
 #cpu,
 #idle_inhibitor,
 #clock,
-#custom-wifi,
+#network,
 #bluetooth,
 #custom-update,
 #mpris,
@@ -149,6 +149,12 @@ tooltip label {
 #custom-temperature {
   background: @temperature;
   padding: 0 0 0 1px;
+}
+
+#tray {
+    border-radius: 0px;
+    color: @pulseaudio;
+    background: @pulseaudio;
 }
 
 /* ───────────────────────────────────────────────────────────────┤ memory ├───
@@ -258,12 +264,12 @@ tooltip label {
 
 /* ────────────────────────────────────────────────────────────────┤ wi-fi ├───
 */
-#custom-wifi {
+#network {
   background: @tray;
   padding: 0 8px 0 5px;
 }
 
-#custom-wifi:hover {
+#network:hover {
   color: @hover-fg;
 }
 

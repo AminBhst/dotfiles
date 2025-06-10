@@ -10,9 +10,6 @@
   // ──────────────────────────────────────────────────────────┤ positions ├───
 
   "modules-left": [
-    "custom/theme",         // theme switcher
-    "custom/left1",
-
     "hyprland/workspaces",  // workspaces
     "custom/right1",
 
@@ -44,7 +41,7 @@
     "clock#date",           // date
     "custom/right4",
 
-    "custom/wifi",          // wi-fi
+    "network",              // network
     "bluetooth",            // bluetooth
     "custom/update",        // system update
     "custom/right5"
@@ -52,6 +49,9 @@
 
   "modules-right": [
     "mpris",                // media info
+
+    "custom/left6",
+    "tray",                 // tray
 
     "custom/left6",
     "pulseaudio",           // output device
@@ -295,10 +295,11 @@
 
   // ──────────────────────────────────────────────────────────────┤ wi-fi ├───
 
-  "custom/wifi": {
+  "network": {
     "exec": "~/.config/waybar/scripts/wifi-status.sh",
     "return-type": "json",
     "format": "{}",
+    "format-ethernet": "",
     "on-click": "~/.config/waybar/scripts/wifi-menu.sh",
     "on-click-right": "kitty --title '󰤨  Network Manager TUI' bash -c nmtui",
     "interval": 1,
@@ -363,6 +364,13 @@
     "tooltip-format-paused": "Paused: {title} - {artist}",
     "min-length": 5,
     "max-length": 35
+  },
+
+
+  // ──────────────────────────────────────────────────────┤ system tray ├───
+  "tray": {
+    "icon-size": 16,
+    "spacing": 12
   },
 
   // ──────────────────────────────────────────────────────┤ output device ├───
