@@ -94,7 +94,7 @@
   // ─────────────────────────────────────────────────────────────┤ window ├───
 
   "hyprland/window": {
-    "format": "{}",
+    "format": "{class}",
     "tooltip": false,
     "min-length": 5,
 
@@ -108,6 +108,7 @@
       "~": "  Terminal",
       "zsh": "  Terminal",
       "kitty": "  Terminal",
+      "alacritty": "  Alacritty",
 
       "tmux(.*)": 
         "<span foreground='#a6d189'> </span> Tmux",
@@ -140,6 +141,9 @@
         "<span foreground='#a6d189'> </span> Vim",
       "vim (.*)": 
         "<span foreground='#a6d189'> </span> $1",
+
+      "jetbrains-idea": 
+        "<span foreground='#8caaee'></span> Intellij IDEA",
 
       // ──────────────────────────────────────────────────────────── media ───
 
