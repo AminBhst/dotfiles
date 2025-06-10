@@ -86,7 +86,7 @@ chsh -s $(which zsh)
 # yay
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git ~/.yay-bin && cd ~/.yay-bin && makepkg -si
 yay
-yay -S asusctl supergfxctl
+yay -S asusctl supergfxctl bluetui rofi-lbonn-wayland-git
 
 mkdir ~/.config/xdg-desktop-portal
 echo -e "[preferred]\ndefault=hyprland;gtk" > ~/.config/xdg-desktop-portal/hyprland-portals.conf
