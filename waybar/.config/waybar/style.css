@@ -157,6 +157,15 @@ tooltip label {
     background: @pulseaudio;
 }
 
+#tray menu {
+    background: #14141c;
+}
+
+#tray menu menuitem:hover {
+  background-color: #061B3B;
+  color: #ffffff;
+}
+
 /* ───────────────────────────────────────────────────────────────┤ memory ├───
 */
 #custom-left3 {
