@@ -41,6 +41,7 @@ sudo pacman -S --noconfirm \
   feh \
   zsh \
   neovim \
+  tmux \
   network-manager-applet \
   telegram-desktop \
   base-devel \
@@ -87,6 +88,11 @@ chsh -s $(which zsh)
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git ~/.yay-bin && cd ~/.yay-bin && makepkg -si
 yay
 yay -S asusctl supergfxctl bluetui rofi-lbonn-wayland-git
+
+# tmux
+# Use mod+shift+i to install tmux plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp ~/dotfiles/.tmux.conf ~/
 
 mkdir ~/.config/xdg-desktop-portal
 echo -e "[preferred]\ndefault=hyprland;gtk" > ~/.config/xdg-desktop-portal/hyprland-portals.conf
