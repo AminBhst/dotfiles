@@ -67,7 +67,8 @@ sudo pacman -S --noconfirm \
   brightnessctl \
   pipewire \
   pipewire-pulse \
-  wireplumber
+  wireplumber \
+  archlinux-xdg-menu
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
