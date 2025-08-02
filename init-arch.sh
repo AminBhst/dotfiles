@@ -75,7 +75,9 @@ wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsM
 
 # Setup configs
 git clone git@github.com:AminBhst/dotfiles.git ~/.dotfiles
-stow -d ~/.dotfiles -t ~ */
+cd dotfiles
+stow */
+cd ..
 
 # Setup nvim
 git clone git@github.com:AminBhst/nvim.git ~/.config/nvim
@@ -97,3 +99,13 @@ cp ~/dotfiles/.tmux.conf ~/
 
 mkdir ~/.config/xdg-desktop-portal
 echo -e "[preferred]\ndefault=hyprland;gtk" > ~/.config/xdg-desktop-portal/hyprland-portals.conf
+
+# Setup chaotic aur
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo bash -c 'echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf'
+sudo pacman -Syu
+
+sudo pacman -S --noconfirm zen-browser
