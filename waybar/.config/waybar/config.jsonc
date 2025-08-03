@@ -7,18 +7,17 @@
     "passthrough": false,
     "fixed-center": true,
 
-    "modules-left": [
-      "hyprland/workspaces",
-      "custom/sep",
-      "hyprland/window"
-    ],
-    "modules-center": ["custom/music-player"],
-    "modules-right": [
-        "custom/sep",
-        "pulseaudio",
-        "pulseaudio#microphone",
+    "modules-left": ["hyprland/workspaces"],
+    // "modules-center": ["custom/music-player"],
+    "modules-center": [
         "clock",
         "clock#date",
+    ],
+    "modules-right": [
+      "cpu",
+      "memory",
+        "pulseaudio",
+        "battery",
         "custom/sep",
         "tray",
         "custom/sep",
@@ -62,6 +61,21 @@
         "icon-size": 22
     },
 
+    "battery": {
+      "states": {
+      "warning": 20,
+      "critical": 10
+    },
+      "format": "{icon} {capacity}%",
+      "format-icons": ["󰂎", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "format-charging": " {capacity}%",
+      "tooltip-format": "Discharging: {time}",
+      "tooltip-format-charging": "Charging: {time}",
+      "interval": 1,
+      "min-length": 6,
+      "max-length": 6
+    },
+
     "tray": {
         "show-passive-items": true,
         "spacing": 10
@@ -71,6 +85,29 @@
         "tooltip": false,
         "format": "  {:%H:%M}"
     },
+
+  "cpu": {
+    "format": "󰍛 {usage}%",
+    "tooltip": false,
+    "interval": 5,
+    "min-length": 6,
+    "max-length": 6
+  },
+  
+  "memory": {
+    "states": {
+      "warning": 75,
+      "critical": 90
+    },
+
+    "format": "󰘚 {percentage}%",
+    "format-critical": "󰀦 {percentage}%",
+    "tooltip": false,
+    // "tooltip-format": "Memory Used: {used:0.1f} GB / {total:0.1f} GB",
+    "interval": 5,
+    "min-length": 7,
+    "max-length": 7
+  },
 
     "clock#date": {
         "format": "  {:L%a %d %b}",
@@ -91,7 +128,7 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "format-muted": "  muted",
         "format-icons": {
             "headphone": " ",
