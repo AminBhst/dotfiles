@@ -37,6 +37,7 @@ sudo pacman -S --noconfirm \
   stow \
   fzf \
   dunst \
+  cliphist \
   clang \
   rustup \
   discord \
