@@ -38,6 +38,7 @@ sudo pacman -S --noconfirm \
   fzf \
   dunst \
   clang \
+  rustup \
   discord \
   ninja \
   libkeybinder3 \
@@ -83,6 +84,9 @@ sudo pacman -S --noconfirm \
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
+
+# Setup rust
+rustup default stable
 
 # Setup configs
 git clone git@github.com:AminBhst/dotfiles.git ~/.dotfiles
