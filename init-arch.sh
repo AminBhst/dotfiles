@@ -21,9 +21,18 @@ sudo pacman -S --noconfirm \
   noto-fonts-emoji
 
 
+# Setup chaotic aur
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo bash -c 'echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf'
+sudo pacman -Syu
+
 # Packages
 sudo pacman -S --noconfirm \
   git \
+  zen-browser \
   lazygit \
   stow \
   fzf \
@@ -38,6 +47,7 @@ sudo pacman -S --noconfirm \
   picom \
   flatpak \
   alacritty \
+  ghostty \
   feh \
   zsh \
   neovim \
@@ -87,6 +97,7 @@ git clone git@github.com:AminBhst/nvim.git ~/.config/nvim
 sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh
 sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh
 chsh -s $(which zsh)
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # yay
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git ~/.yay-bin && cd ~/.yay-bin && makepkg -si
@@ -100,16 +111,6 @@ cp ~/dotfiles/.tmux.conf ~/
 
 mkdir ~/.config/xdg-desktop-portal
 echo -e "[preferred]\ndefault=hyprland;gtk" > ~/.config/xdg-desktop-portal/hyprland-portals.conf
-
-# Setup chaotic aur
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key 3056513887B78AEB
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-sudo bash -c 'echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf'
-sudo pacman -Syu
-
-sudo pacman -S --noconfirm zen-browser
 
 # Flatpaks
 flatpak install flathub com.bitwarden.desktop
