@@ -60,6 +60,7 @@ sudo pacman -S --noconfirm \
   usbmuxd \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
+  hyprpaper \
   ncdu \
   spotify-launcher \
   yt-dlp \
@@ -109,3 +110,6 @@ sudo bash -c 'echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorli
 sudo pacman -Syu
 
 sudo pacman -S --noconfirm zen-browser
+
+# Flatpaks
+flatpak install flathub com.bitwarden.desktop
