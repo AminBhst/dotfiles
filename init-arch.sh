@@ -36,6 +36,7 @@ sudo pacman -S --noconfirm \
   lazygit \
   stow \
   fzf \
+  unzip \
   dunst \
   cliphist \
   clang \
@@ -93,21 +94,33 @@ rustup default stable
 git clone git@github.com:AminBhst/dotfiles.git ~/.dotfiles
 cd dotfiles
 stow */
-cd ..
+cd ~
 
 # Setup nvim
+echo "======================= Neovim ======================="
 git clone git@github.com:AminBhst/nvim.git ~/.config/nvim
+mkdir -p Dev/Tools/codelldb
+wget -P Dev/Tools/codelldb https://github.com/vadimcn/codelldb/releases/download/v1.11.5/codelldb-linux-x64.vsix
+cd Dev/Tools/codelldb
+unzip codelldb-linux-x64.vsix
+rm -rf codelldb-linux-x64.vsix
+cd ~
+echo "======================= Neovim complete ======================="
+
+
   
 # Setup zsh
-sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh
-sudo wget -P /usr/share/fzf/shell https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh
+echo "======================= zsh ======================="
 chsh -s $(which zsh)
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+echo "======================= zsh complete ======================="
 
 # yay
+echo "======================= yay ======================="
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git ~/.yay-bin && cd ~/.yay-bin && makepkg -si
 yay
 yay -S asusctl supergfxctl bluetui rofi-lbonn-wayland-git
+echo "======================= yay complete ======================="
 
 # tmux
 # Use mod+shift+i to install tmux plugins
