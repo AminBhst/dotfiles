@@ -74,6 +74,7 @@ sudo pacman -S --noconfirm \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
   hyprpaper \
+  hyprlock \
   ncdu \
   spotify-launcher \
   yt-dlp \
