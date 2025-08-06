@@ -46,6 +46,8 @@ sudo pacman -S --noconfirm \
   libkeybinder3 \
   libappindicator-gtk3 \
   cmake \
+  python-pip \
+  python-pywal \
   waybar \
   picom \
   flatpak \
@@ -132,3 +134,6 @@ echo -e "[preferred]\ndefault=hyprland;gtk" > ~/.config/xdg-desktop-portal/hyprl
 
 # Flatpaks
 flatpak install flathub com.bitwarden.desktop
+
+# pywal
+wal -i ~/Pictures/Wallpapers/lucy-2.jpg
