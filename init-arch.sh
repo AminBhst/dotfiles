@@ -69,7 +69,7 @@ sudo pacman -S --noconfirm \
   polkit-gnome \
   ffmpeg \
   pavucontrol \
-  grim \
+  hyprshot \
   wl-clipboard \
   libimobiledevice \
   usbmuxd \
