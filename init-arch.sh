@@ -13,6 +13,7 @@ sudo pacman -S --noconfirm \
   ttf-jetbrains-mono-nerd \
   noto-fonts \
   noto-fonts-emoji \
+  noto-fonts-cjk \
   ttf-dejavu \
   ttf-liberation \
   fonts-meta-base \
@@ -64,6 +65,7 @@ sudo pacman -S --noconfirm \
   btop \
   unrar \
   vlc \
+  vlc-plugin-ffmpeg \
   zoxide \
   ripgrep \
   polkit-gnome \
