@@ -87,7 +87,8 @@ sudo pacman -S --noconfirm \
   pipewire \
   pipewire-pulse \
   wireplumber \
-  archlinux-xdg-menu
+  archlinux-xdg-menu \
+  timeshift
 
 #  Download jetbrains font
 wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf
