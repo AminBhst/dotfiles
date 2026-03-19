@@ -1,5 +1,0 @@
-# Fixing hard drive mount issue
-lsblk
-# If the drive is sda2
-sudo mkdir -p /mnt/adata
-sudo mount -t ntfs-3g /dev/sda2 /mnt/adata
