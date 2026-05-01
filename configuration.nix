@@ -19,6 +19,7 @@
   programs.zsh.enable = true;
   environment.shells = with pkgs; [zsh];
   users.defaultUserShell = pkgs.zsh;
+  programs.nix-ld.enable = true;
 
   networking.hostName = "ryewell";
 
@@ -64,6 +65,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  programs.nm-applet.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -148,6 +150,11 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
+    rustup
+    gcc
+    nodejs
+    jetbrains.rust-rover
+    isabelle
     # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     alacritty
     telegram-desktop

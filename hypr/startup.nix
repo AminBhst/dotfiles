@@ -10,6 +10,7 @@
       "nm-applet --indicator"
       "workstyle &> /tmp/workstyle.log"
       "wl-paste --watch cliphist store"
+      "kdeconnectd"
     ];
 
     exec = [

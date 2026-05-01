@@ -77,6 +77,11 @@
     # EDITOR = "emacs";
   };
 
+  home.sessionPath = [
+    "$HOME/.npm-global/bin"
+    "$HOME/.npm-global/bin:$PATH"
+  ];
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
