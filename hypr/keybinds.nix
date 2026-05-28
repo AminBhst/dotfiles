@@ -16,6 +16,7 @@
       "ALT, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
       "$mainMod, M, exec, bemenu-run --fb \"##24273a\" --ff \"##cad3f5\" --nb \"##24273a\" --nf \"##cad3f5\" --tb \"##24273a\" --hb \"##24273a\" --tf \"##ed8796\" --hf \"##eed49f\" --nf \"##cad3f5\" --af \"##cad3f5\" --ab \"##24273a\""
       ", Print, exec, hyprshot -m region --clipboard-only"
+      "$mainMod, H, exec, hyprshot -m region --clipboard-only"
       "ALT_SHIFT, D, exec, hyprctl keyword monitor \"eDP-1,disable\""
       "ALT_SHIFT, E, exec, hyprctl keyword monitor \"eDP-1,enable\""
       "ALT_SHIFT, L, exec, hyprlock"
