@@ -36,6 +36,7 @@
   ];
 
   hardware.graphics.enable = true;
+  hardware.bluetooth.enable = true;
 
   hardware.nvidia = {
     modesetting.enable = true;
