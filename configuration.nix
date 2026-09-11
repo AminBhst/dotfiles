@@ -4,6 +4,15 @@
 
 { config, pkgs, lib, inputs, ... }:
 
+
+
+let
+  unstable = import inputs.nixpkgs-unstable {
+    system = pkgs.system;
+    config.allowUnfree = true;
+  };
+in
+
 {
   imports =
     [ 
@@ -90,6 +99,8 @@
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
 
+  services.flatpak.enable = true;
+
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
@@ -155,6 +166,7 @@
     gcc
     nodejs
     jetbrains.rust-rover
+    unstable.jetbrains.idea
     isabelle
     # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     alacritty
@@ -173,6 +185,24 @@
     libreoffice
     unrar
     pavucontrol
+    obs-studio
+
+    flutter
+    dart
+    clang
+    cmake
+    ninja
+    pkg-config
+    gtk3
+    glib
+    cairo
+    pango
+    harfbuzz
+    gdk-pixbuf
+    keybinder3
+    libayatana-appindicator
+    wireguard-tools
+    protonvpn-gui
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
